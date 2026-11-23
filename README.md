@@ -8,10 +8,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MJforti"><img src="./assets/social/github.svg" height="44" alt="GitHub" /></a>&nbsp;
+  <a href="./assets/Manthan_Jain_Resume.pdf"><img src="./assets/social/resume.svg" height="44" alt="Resume" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/mjf0rti"><img src="./assets/social/linkedin.svg" height="44" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://leetcode.com/u/mjforti_/"><img src="./assets/social/leetcode.svg" height="44" alt="LeetCode" /></a>&nbsp;
-  <a href="https://portfolio-tawny-two-12.vercel.app"><img src="./assets/social/globe.svg" height="44" alt="Portfolio" /></a>
+  <a href="https://leetcode.com/u/mjforti_/"><img src="./assets/social/leetcode.svg" height="44" alt="LeetCode" /></a>
 </p>
 
 <img src="./assets/status.svg" width="100%" alt="Status: GitHub contributions, streaks, 90-day activity, degree progress and language mix. Refreshed daily." />

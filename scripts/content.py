@@ -125,11 +125,11 @@ EXPLORING = [
     ("queued", "Kubernetes & Terraform", "Infrastructure as code and orchestration for systems at scale"),
 ]
 
+# Links under the hero. A relative path opens that file in this repo (GitHub previews PDFs).
 SOCIAL = [
-    ("github", "GitHub", "https://github.com/MJforti"),
+    ("resume", "Resume", "./assets/Manthan_Jain_Resume.pdf"),
     ("linkedin", "LinkedIn", "https://www.linkedin.com/in/mjf0rti"),
     ("leetcode", "LeetCode", "https://leetcode.com/u/mjforti_/"),
-    ("globe", "Portfolio", "https://portfolio-tawny-two-12.vercel.app"),
 ]
 
 CONNECT = {

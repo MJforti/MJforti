@@ -52,6 +52,13 @@ ICON_COLOR = {
 GLOBE = ("M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.9 8ZM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96ZM4.26 14a8.2 8.2 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4H4.26Zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16Zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.03 8ZM12 19.96A14.1 14.1 0 0 1 10.09 16h3.82A14.1 14.1 0 0 1 12 19.96ZM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4Zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56ZM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38Z")
 
 
+# Document with a folded corner and text lines; drawn with fill-rule evenodd.
+RESUME = ("M6 2h8.6L20 7.4V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"
+          "M6.2 4.2v15.6h11.6V9h-5V4.2H6.2Z"
+          "M8 11.6h8v1.7H8Z M8 15.1h8v1.7H8Z M8 8.1h3v1.7H8Z")
+CUSTOM_ICONS = {"globe": GLOBE, "resume": RESUME}
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -161,8 +168,9 @@ class Card:
             self.add(self.text(self.w - 36, y, right, "mono", 11, DIM, "end", ls=1.2))
 
     def icon(self, slug, x, y, size, color=None):
-        d = GLOBE if slug == "globe" else ICONS[slug]["path"]
-        return f'<path transform="translate({x:.1f} {y:.1f}) scale({size / 24:.4f})" d="{d}" fill="{color or icon_color(slug)}"/>'
+        d = CUSTOM_ICONS.get(slug) or ICONS[slug]["path"]
+        rule = ' fill-rule="evenodd"' if slug == "resume" else ""
+        return f'<path transform="translate({x:.1f} {y:.1f}) scale({size / 24:.4f})" d="{d}"{rule} fill="{color or icon_color(slug)}"/>'
 
     def chip(self, x, y, item, h=34, fs=14, isz=16, font="sans-medium", fill=RAISED):
         slug, label = parse_item(item)
