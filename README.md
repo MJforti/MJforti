@@ -19,7 +19,7 @@
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-<img src="./assets/stack.svg" width="100%" alt="Stack: TypeScript, JavaScript, Python, C++, Java, SQL; React, Next.js, Tailwind CSS, Vite; Node.js, Express, FastAPI; PostgreSQL, Supabase, SQLite, Prisma; AWS, Google Cloud, Vercel, Docker; Gemini API, prompt engineering, LLM evaluation, RAG; Git, GitHub, pytest." />
+<img src="./assets/stack.svg" width="100%" alt="Stack: TypeScript, JavaScript, Python, C++, Java, SQL; React, Next.js, Tailwind CSS, Vite, PWA; Node.js, Express, FastAPI; PostgreSQL, Supabase, SQLite, Prisma; AWS, Google Cloud, Vercel, Docker; Gemini API, Prompt engineering, LLM evaluation, RAG; Git, GitHub, pytest." />
 
 <img src="./assets/sections/work.svg" width="100%" alt="Selected work" />
 
