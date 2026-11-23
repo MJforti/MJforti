@@ -62,7 +62,7 @@ PROJECTS = [
         "title": "ContextShield",
         "desc": "Tests how prompt-engineering defenses hold up against indirect prompt "
                 "injection: attack compliance, task accuracy and false refusals.",
-        "facts": "4 defense strategies · 24 attack cases · team lead",
+        "facts": "4 defense strategies · 20 attacks + 4 clean controls · 95 tests · team lead",
         "stack": ["nextdotjs", "fastapi", "python", "sqlite"],
         "art": "shield",
     },
